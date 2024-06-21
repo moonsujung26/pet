@@ -1018,7 +1018,19 @@
 
 #main_product {
     padding: 80px 0;
+    position: relative;
+}
 
+#main_product::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 1px;
+    background: var(--primary-color);
+    z-index: 999;
 }
 
 #main_product .tit {
@@ -1026,6 +1038,8 @@
     width: 100%;
     margin: 0 auto;
 }
+
+
 
 #main_product .tit h3 {
     font-size: 32px;
