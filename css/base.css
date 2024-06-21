@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #ff4081;
+    --scondary-color: #fff3f6;
+    /* --tertiary-color: #ffebf2; */
+    --back-color: #f9f9f9;
+    --body-color: #333333;
+    --white-color: #ffffff;
+    --line-color: #dddddd;
+}
+
+
+
+.inner {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+}
