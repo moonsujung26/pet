@@ -1159,7 +1159,7 @@
     position: absolute;
     top: 51%;
     right: 0;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
 }
 
 #main_product .inner .dog_arrows button {
@@ -1212,6 +1212,7 @@
 }
 
 #main_community .inner {
+
     display: flex;
     gap: 30px;
 }
@@ -1222,6 +1223,9 @@
 
 
 #main_community .inner .itm {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 16px;
     overflow: hidden;
 }
 
@@ -1233,6 +1237,18 @@
 #main_community .inner .dog a:hover {
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+
+#main_community .inner .itm button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: var(--white-color);
+    z-index: 3;
+    padding: 16px 32px;
 }
 
 /* //커뮤끝// */
