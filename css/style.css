@@ -10,7 +10,7 @@
 
 #header .inner_h {
     height: 100px;
-    max-width: calc(100% - 160px);
+    max-width: 1700px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -24,13 +24,14 @@
     transform: translate(-50%, -50%);
 }
 
+
 #header .gnb {
     margin: 0 auto 0 0;
 }
 
 #header .gnb>ul {
     display: flex;
-    gap: 3rem;
+    gap: 30px;
 }
 
 #header .gnb>ul>li a {
@@ -186,9 +187,11 @@
 
 #main_visual .main_visual_slide .itm {
     position: relative;
+    width: 1700px;
     height: 660px;
+    overflow: hidden;
     margin: 12.5rem 5vw 10rem 5vw;
-
+    border: 1px solid var(--white-color);
     border-radius: 0.8rem;
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
 }
@@ -320,7 +323,7 @@
     bottom: 120px;
     left: 50%;
     transform: translate(-50%, 0);
-    z-index: 999;
+    z-index: 3;
 }
 
 #main_visual .main_visual_slide .slick-dots li {
@@ -334,6 +337,7 @@
     height: 16px;
     border: 2px solid var(--primary-color);
     border-radius: 4px;
+    cursor: pointer;
 }
 
 #main_visual .main_visual_slide .slick-dots li.slick-active button {
@@ -350,7 +354,7 @@
     background: var(--primary-color);
     cursor: pointer;
     font-size: 14px;
-    opacity: 0.1;
+    opacity: 0.2;
 }
 
 
@@ -369,7 +373,6 @@
     transform: translate(-50%, -50%) rotate(-45deg);
     width: 24px;
     height: 24px;
-
     border-top: 2px solid var(--white-color);
     border-left: 2px solid var(--white-color);
     z-index: 1;
@@ -403,10 +406,10 @@
     bottom: 30px;
     left: 50%;
     transform: translate(-50%, 0) rotate(315deg);
-    width: 24px;
-    height: 24px;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
+    width: 14px;
+    height: 14px;
+    border-left: 2px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
     animation: scrollDown 1s ease-in-out infinite alternate;
 }
 
@@ -747,6 +750,7 @@
 
 #main_content .inner {
     padding: 40px 0;
+    height: 677px;
     background: var(--back-color);
     border-radius: 20px;
 }
@@ -831,6 +835,7 @@
 #main_content .sub_list .dog_list ul.on {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px 0;
     margin: 0 60px;
 
 }
@@ -851,6 +856,26 @@
 
 
 #main_content .sub_list .cat_list ul>li>a img {
+    width: 60%;
+
+}
+
+#main_content .sub_list .dog_list ul>li {
+    margin: 0 0 24px 0;
+}
+
+#main_content .sub_list .dog_list ul>li>a {
+    text-align: center;
+
+}
+
+#main_content .sub_list .dog_list ul>li>a p {
+    display: block;
+    margin: 16px 0 0 0;
+}
+
+
+#main_content .sub_list .dog_list ul>li>a img {
     width: 60%;
 
 }
@@ -1030,7 +1055,7 @@
     width: 100px;
     height: 1px;
     background: var(--primary-color);
-    z-index: 999;
+    z-index: 1;
 }
 
 #main_product .tit {
@@ -1044,7 +1069,7 @@
 #main_product .tit h3 {
     font-size: 32px;
     font-weight: 600;
-    margin: 0 0 24px 0;
+    margin: 0 0 48px 0;
     color: var(--body-color);
     text-align: center;
 }
@@ -1052,7 +1077,7 @@
 #main_product .tit p {
     font-size: 16px;
     font-weight: 400;
-    margin: 0 0 40px 0;
+    margin: 0 0 20px 0;
     color: var(--body-color);
     text-align: center;
 }
@@ -1068,8 +1093,6 @@
     position: absolute;
     top: 0;
     right: 0;
-
-    transform: translate(-50%, 0);
 }
 
 #main_product .inner .cat_arrows button {
@@ -1134,10 +1157,9 @@
 
 #main_product .inner .dog_arrows {
     position: absolute;
-    top: 50%;
+    top: 51%;
     right: 0;
-
-    transform: translate(-50%, 0);
+    transform: translate(0,-50%);
 }
 
 #main_product .inner .dog_arrows button {
@@ -1157,13 +1179,13 @@
 }
 
 #main_product .inner .title {
-
     text-align: center;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 48px auto;
 }
 
 #main_product .inner .title strong {
     font-size: 20px;
+    line-height: 24px;
     color: var(--body-color);
 }
 
@@ -1303,7 +1325,6 @@
     z-index: 999;
     opacity: 0;
     visibility: hidden;
-
     transition: 0.5s;
 
 }
@@ -1323,9 +1344,9 @@
 }
 
 .to_top i {
-    padding: 16px;
+    padding: 20px;
     background: rgba(153, 153, 153, 0.3);
-    border-radius: 50%;
+    border-radius: 4px;
     color: #fff;
 
     transform: rotate(90deg);

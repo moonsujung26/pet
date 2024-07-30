@@ -69,6 +69,12 @@ $('#main_content .list>ul>li button').on('click', function () {
         .siblings()
         .removeClass('on');
 
+    $('#main_content .sub_list .dog_list ul')
+        .eq(idx)
+        .addClass('on')
+        .siblings()
+        .removeClass('on');
+
 });
 
 
